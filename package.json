@@ -1,0 +1,10 @@
+{
+  "name": "cera-monitor",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install:all": "npm --prefix server install && npm --prefix client install",
+    "dev": "concurrently \"npm --prefix server run dev\" \"npm --prefix client run dev\""
+  },
+  "devDependencies": { "concurrently": "^9.1.2" }
+}
